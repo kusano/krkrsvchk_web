@@ -1,3 +1,5 @@
+var webpack = require('webpack');
+
 module.exports = {
   entry: {
     html: __dirname+'/index.html',
@@ -22,5 +24,14 @@ module.exports = {
       },
     ],
   },
+  plugins: process.argv.indexOf('--release')>=0 ? [
+    // https://facebook.github.io/react/docs/optimizing-performance.html#use-the-production-build
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin()
+  ] : [],
   devtool: 'source-map',
 }
