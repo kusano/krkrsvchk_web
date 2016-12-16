@@ -10,7 +10,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "krkrsvchk": "file:..\\krkrsvchk",
+    "krkrsvchk": "^1.0.0",
     "material-ui": "^0.16.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
