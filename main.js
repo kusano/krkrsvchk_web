@@ -64,7 +64,8 @@ class App extends React.Component {
             システム変数データ（sc.ksd, su.ksd）には対応しています。
           </p>
           <p>
-            セーブデータの解析処理はnpmのライブラリとして公開しており、コマンドラインから実行することも可能です。
+            セーブデータの解析処理はnpmのライブラリとして公開しており、コマンドラインから実行することも可能です。<br />
+            <a href="https://www.npmjs.com/package/krkrsvchk">https://www.npmjs.com/package/krkrsvchk</a>
           </p>
           <p>
             <a href="https://twitter.com/kusano_k">@kusano_k</a>
